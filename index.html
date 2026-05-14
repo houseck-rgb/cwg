@@ -2006,7 +2006,7 @@ function initPwScreen(){
 function getStaffCode(fullName){
   return fullName.replace(/\s+/g,'');
 }
-/* 직원 이름만 추출 — "고선애 sf" → "고선애" */
+/* 직원 이름만 추출 — "고선애 s" → "고선애" */
 function getStaffName(fullName){
   const parts = fullName.trim().split(/\s+/);
   return parts[0] || fullName;
