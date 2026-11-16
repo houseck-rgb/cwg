@@ -446,6 +446,61 @@ html,body{
 .kakao-btn{width:100%;padding:14px;background:linear-gradient(135deg,#3A1D00,#5A3200);border:1px solid rgba(200,150,10,.35);border-radius:var(--r);color:var(--gold2);font-size:14px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
 .kakao-btn:active{transform:scale(.98);opacity:.9}
 .kakao-btn-ico{font-size:18px}
+
+/* ════ 레시피 화면 — 흰 바탕 · 큰 글씨 ════ */
+#panel.rcp{background:#ffffff}
+#panel.rcp .phdr{background:#ffffff;border-bottom:2px solid #e5e5e5}
+#panel.rcp .phdr-back{color:#111;font-size:17px;font-weight:700}
+#panel.rcp .phdr-cat{color:#666;font-size:11px}
+#panel.rcp .phdr-pct{color:#111}
+#panel.rcp .pbanner{background:#f7f7f7;border-bottom:2px solid #e5e5e5}
+#panel.rcp .pbanner::before{display:none}
+#panel.rcp .pb-eye{font-family:'Noto Sans KR',sans-serif;font-weight:500;font-size:14px;letter-spacing:0;color:#555;text-transform:none}
+#panel.rcp .pb-title{font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:28px;color:#000}
+#panel.rcp .pb-pct{font-size:44px;color:#000;text-shadow:none}
+#panel.rcp .pb-count{font-size:15px;color:#333;font-weight:700}
+#panel.rcp .pb-bar{background:#e5e5e5;height:6px}
+#panel.rcp .pb-bar-fill{background:#1a7a3a}
+#panel.rcp .pbody{background:#ffffff;padding:16px}
+#panel.rcp .sg-lbl{font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:20px;letter-spacing:0;color:#000;text-transform:none;border-top:2px solid #e5e5e5;padding:18px 2px 10px}
+#panel.rcp .ck-list{gap:9px}
+#panel.rcp .ck{background:#ffffff;border:2px solid #d0d0d0;padding:15px 16px;align-items:center}
+#panel.rcp .ck.done{background:#eaf6ee;border-color:#1a7a3a}
+#panel.rcp .ck-box{width:30px;height:30px;border:2.5px solid #888;font-size:18px;color:#fff;margin-top:0}
+#panel.rcp .ck.done .ck-box{background:#1a7a3a;border-color:#1a7a3a}
+#panel.rcp .ck-m{word-break:keep-all;font-size:21px;font-weight:700;color:#000;line-height:1.35}
+#panel.rcp .ck.done .ck-m{color:#555}
+#panel.rcp .rcp-grp{font-size:12px;font-weight:700;color:#333;border:1.5px solid #999;border-radius:10px;padding:2px 8px;margin-left:8px;vertical-align:middle}
+#panel.rcp .rcp-div{display:flex;align-items:center;gap:10px;margin:16px 0 6px}
+#panel.rcp .rcp-div i{flex:1;height:2px;background:#cfcfcf}
+#panel.rcp .rcp-div span{font-size:17px;font-weight:900;color:#000;white-space:nowrap}
+#panel.rcp .rcp-note{word-break:keep-all;background:#fff8e0;border:2px solid #e0b000;border-radius:10px;padding:12px 14px;font-size:17px;font-weight:700;color:#000;margin-bottom:14px}
+#panel.rcp .rcp-ref{font-size:15px;color:#444;margin:-4px 0 12px;padding:0 2px}
+#panel.rcp .step-item{background:#ffffff;border:2px solid #d0d0d0;padding:14px 16px;gap:14px;margin-bottom:9px}
+#panel.rcp .step-num{font-size:30px;color:#000;min-width:28px}
+#panel.rcp .step-txt{word-break:keep-all;font-size:20px;font-weight:600;color:#000;line-height:1.55;padding-top:1px}
+/* 재료 수량 창 */
+#ing-modal{background:rgba(0,0,0,.55)}
+#ing-modal .ing-box{background:#ffffff;border:none}
+#ing-modal .ing-title{font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:26px;color:#000}
+#ing-modal .ing-close{color:#333;font-size:28px}
+#ing-modal .ing-sub{font-size:15px;color:#444;font-weight:700}
+#ing-modal .ing-amount-card{background:#f5f5f5;border:2px solid #d0d0d0}
+#ing-modal .ing-amount-card::before{display:none}
+#ing-modal .ing-amount-eye{font-family:'Noto Sans KR',sans-serif;font-size:13px;letter-spacing:0;color:#555;font-weight:700;text-transform:none}
+#ing-modal .ing-amount-num{font-family:'Noto Sans KR',sans-serif;font-weight:900;font-size:clamp(44px,13vw,72px);color:#000;text-shadow:none;letter-spacing:0;word-break:keep-all}
+#ing-modal .ing-amount-note{font-size:15px;color:#333;font-weight:700}
+#ing-modal .ing-confirm{font-size:19px;padding:18px;background:#1a7a3a;color:#fff}
+.step-txt .hl{font-weight:900;color:var(--gold3);background:rgba(232,184,32,.18);border-radius:4px;padding:0 3px}
+#panel.rcp .step-txt .hl{color:#000;background:#ffe14d;font-weight:900;padding:1px 4px;border-radius:4px}
+#ing-modal .ing-title{font-size:clamp(42px,12vw,60px);font-weight:900;color:#000;line-height:1.2}
+#ing-modal .ing-title{display:inline;background:linear-gradient(transparent 55%,#ffe14d 55%);padding:0 4px;flex:0 1 auto}
+#ing-modal .ing-hd{align-items:flex-start;margin-bottom:14px}
+.ing-warn-txt{font-size:12px;font-weight:700;color:#e0604a;margin-top:4px}
+#panel.rcp .ck.ing-warn{border-color:#d93025;background:#fff4f2}
+#panel.rcp .ck.ing-warn.done{background:#eaf6ee;border-color:#1a7a3a}
+#panel.rcp .ing-warn-txt{font-size:17px;font-weight:900;color:#c5221f;margin-top:5px;word-break:keep-all}
+.ing-warn-box{background:#fff4f2;border:2.5px solid #d93025;border-radius:12px;padding:14px 16px;margin:-6px 0 18px;font-size:20px;font-weight:900;color:#c5221f;text-align:center;word-break:keep-all;line-height:1.4}
 </style>
 </head>
 <body>
@@ -484,6 +539,7 @@ html,body{
       <div class="ing-amount-num" id="ing-amount-num">—</div>
       <div class="ing-amount-note" id="ing-amount-note"></div>
     </div>
+    <div class="ing-warn-box" id="ing-modal-warn" style="display:none"></div>
     <button class="ing-confirm" data-i="ing-confirm" id="ing-confirm-btn" onclick="confirmIng()">✓ 확인 완료</button>
   </div>
 </div>
@@ -1168,7 +1224,7 @@ function iS(item,lang){const s=item.s;if(!s)return'';if(typeof s==='string')retu
 function iN(item,lang){const n=item.n;if(!n)return'';if(typeof n==='string')return n;return n[lang]||n.ko||'';}
 
 /* 재료 헬퍼 */
-const ing=((m,s,n='')=>({m,s,n}));
+const ing=((m,s,n='',w=null)=>({m,s,n,w}));
 
 const RECIPES=[
   {id:'r1',icon:'🥩',
@@ -1194,7 +1250,7 @@ const RECIPES=[
      ing({ko:'후추가루',en:'Black pepper powder',zh:'胡椒粉',ne:'कालो मिर्च पाउडर'},'100그램'),
      ing({ko:'깨소스',en:'Sesame sauce',zh:'芝麻酱',ne:'तिल सस'},'100그램'),
    ],
-   steps:{ko:['물과 간장에 마늘·생강·양파·대파흰대·배를 넣고 곱게 갈은 다음 체에 거른다','큰 다라이에 모든 재료를 넣고 잘 섞는다'],en:['Blend garlic, ginger, onion, white leek, and pear in water and soy sauce, then strain through sieve','Combine all ingredients in a large bowl and mix well'],zh:['将大蒜、姜、洋葱、大葱白茎、梨放入水和酱油中研磨细腻后过滤','将所有食材放入大盆中充分搅拌'],ne:['पानी र सोया ससमा सबै सामग्री पिसेर छान्नुहोस्','ठूलो बाटामा सबै सामग्री मिसाउनुहोस्']}},
+   steps:{ko:['<b class="hl">물</b>과 <b class="hl">간장</b>에 <b class="hl">마늘</b>·<b class="hl">생강</b>·<b class="hl">양파</b>·<b class="hl">대파흰대</b>·<b class="hl">배</b>를 넣고 곱게 갈은 다음 체에 거른다','큰 다라이에 모든 재료를 넣고 잘 섞는다'],en:['Blend <b class="hl">garlic</b>, <b class="hl">ginger</b>, <b class="hl">onion</b>, <b class="hl">white leek</b>, and <b class="hl">pear</b> in <b class="hl">water</b> and <b class="hl">soy sauce</b>, then strain through sieve','Combine all ingredients in a large bowl and mix well'],zh:['将<b class="hl">大蒜</b>、<b class="hl">姜</b>、<b class="hl">洋葱</b>、<b class="hl">大葱白茎</b>、<b class="hl">梨</b>放入<b class="hl">水</b>和<b class="hl">酱油</b>中研磨细腻后过滤','将所有食材放入大盆中充分搅拌'],ne:['पानी र सोया ससमा सबै सामग्री पिसेर छान्नुहोस्','ठूलो बाटामा सबै सामग्री मिसाउनुहोस्']}},
   {id:'r2',icon:'🥩',
    name:{ko:'양념 삼겹살',en:'Marinated Pork Belly',zh:'腌制五花肉',ne:'म्यारिनेड पोर्क बेली'},
    eye:{ko:'8mm 슬라이스',en:'8mm Slice',zh:'8mm切片',ne:'8mm स्लाइस'},
@@ -1229,10 +1285,10 @@ const RECIPES=[
    ing:[
      ing({ko:'간장',en:'Soy sauce',zh:'酱油',ne:'सोया सस'},'2,000그램'),
      ing({ko:'미림',en:'Mirin',zh:'味醂',ne:'मिरिन'},'1,000그램'),
-     ing({ko:'고추가루',en:'Red pepper powder',zh:'辣椒粉',ne:'रातो मिर्च पाउडर'},'2,000그램'),
+     ing({ko:'고추가루',en:'Red pepper powder',zh:'辣椒粉',ne:'रातो मिर्च पाउडर'},'1,300그램'),
      ing({ko:'식초',en:'Vinegar',zh:'醋',ne:'सिरका'},'3,000그램'),
      ing({ko:'다시다',en:'Dasida',zh:'多喜大',ne:'दासिदा'},'200그램'),
-     ing({ko:'설탕',en:'Sugar',zh:'糖',ne:'चिनी'},'3,000그램'),
+     ing({ko:'설탕',en:'Sugar',zh:'糖',ne:'चिनी'},'2,700그램'),
      ing({ko:'깨',en:'Sesame seeds',zh:'芝麻',ne:'तिल'},'400그램'),
      ing({ko:'미원',en:'MSG',zh:'味精',ne:'एमएसजी'},'200그램'),
      ing({ko:'스프라이트',en:'Sprite',zh:'雪碧',ne:'स्प्राइट'},'1.5리터 2패트'),
@@ -1247,7 +1303,7 @@ const RECIPES=[
      ing({ko:'다시마',en:'Dried kelp',zh:'昆布',ne:'सुकेको केल्प'},'200그램',{ko:'육수',en:'Broth',zh:'汤底',ne:'सुप'}),
      ing({ko:'디포리',en:'Dried anchovy',zh:'鳀鱼干',ne:'सुकेको एन्चोभी'},'500그램',{ko:'육수',en:'Broth',zh:'汤底',ne:'सुप'}),
      ing({ko:'무',en:'Radish',zh:'白萝卜',ne:'मूला'},'2개',{ko:'육수',en:'Broth',zh:'汤底',ne:'सुप'}),
-     ing({ko:'된장',en:'Doenjang (soybean paste)',zh:'大酱',ne:'दोएनजाङ'},'3,000그램',{ko:'조미료',en:'Seasoning',zh:'调味料',ne:'सिजनिङ'}),
+     ing({ko:'된장',en:'Doenjang (soybean paste)',zh:'大酱',ne:'दोएनजाङ'},'4,000그램',{ko:'조미료',en:'Seasoning',zh:'调味料',ne:'सिजनिङ'}),
      ing({ko:'고추가루',en:'Red pepper powder',zh:'辣椒粉',ne:'रातो मिर्च पाउडर'},'300그램',{ko:'조미료',en:'Seasoning',zh:'调味料',ne:'सिजनिङ'}),
      ing({ko:'미원',en:'MSG',zh:'味精',ne:'एमएसजी'},'500그램',{ko:'조미료',en:'Seasoning',zh:'调味料',ne:'सिजनिङ'}),
      ing({ko:'혼다시',en:'Hondashi',zh:'本味霖',ne:'होन्दाशी'},'250그램',{ko:'조미료',en:'Seasoning',zh:'调味料',ne:'सिजनिङ'}),
@@ -1270,12 +1326,12 @@ const RECIPES=[
    ],
    steps:{ko:['가는 무채에 모든 재료를 넣고 잘 섞는다'],en:['Add all ingredients to thin radish strips and mix well'],zh:['将所有食材加入细萝卜丝中充分搅拌'],ne:['पातलो मूलामा सबै सामग्री हालेर मिसाउनुहोस्']}},
   {id:'r7',icon:'🧅',
-   name:{ko:'양념 게장',en:'Seasoned Crab Marinade',zh:'调味螃蟹酱',ne:'सिजन गरिएको केकडा म्यारिनेड'},
+   name:{ko:'양념 게장 (1박스)',en:'Seasoned Crab Marinade (1 box)',zh:'调味螃蟹酱（1箱）',ne:'सिजन गरिएको केकडा म्यारिनेड (1 बक्स)'},
    eye:{ko:'낙지·꼴뚜기 이물질 확인',en:'Check octopus / squid for foreign matter',zh:'检查章鱼·鱿鱼异物',ne:'अक्टोपस/स्क्विडमा विदेशी वस्तु जाँच'},
    note:{ko:'',en:'',zh:'',ne:''},
    ing:[
      ing({ko:'미림',en:'Mirin',zh:'味醂',ne:'मिरिन'},'200그램'),
-     ing({ko:'물엿',en:'Corn syrup',zh:'玉米糖浆',ne:'कर्न सिरप'},'300그램'),
+     ing({ko:'물엿',en:'Corn syrup',zh:'玉米糖浆',ne:'कर्न सिरप'},'300그램','',{ko:'물엿이 많이 부어지지 않도록 주의!',en:'Careful not to pour in too much corn syrup!',zh:'注意不要倒入过多玉米糖浆！',ne:'कर्न सिरप धेरै नहाल्न सावधान!'}),
      ing({ko:'고추가루',en:'Red pepper powder',zh:'辣椒粉',ne:'रातो मिर्च पाउडर'},'450그램'),
      ing({ko:'까나리액젓',en:'Sandlance fish sauce',zh:'玉筋鱼鱼露',ne:'फिश सस'},'200그램'),
      ing({ko:'다진마늘',en:'Minced garlic',zh:'蒜末',ne:'कुटेको लसुन'},'300그램'),
@@ -1289,7 +1345,28 @@ const RECIPES=[
      ing({ko:'후추가루',en:'Black pepper powder',zh:'胡椒粉',ne:'कालो मिर्च पाउडर'},'10그램'),
      ing({ko:'고추기름',en:'Chili oil',zh:'辣椒油',ne:'खुर्सानीको तेल'},'150그램'),
    ],
-   steps:{ko:['절단꽃게는 찬물에 10분 해동 후 건져낸다','고무줄 등 이물질 하나씩 확인해서 제거','모든 재료를 넣고 꼼꼼히 잘 섞는다'],en:['Thaw cut crab in cold water for 10 minutes then drain','Check and remove foreign matter (rubber bands etc.) one by one','Add all ingredients and mix thoroughly'],zh:['将切好的螃蟹放入冷水中解冻10分钟后捞出','逐一检查并去除橡皮筋等异物','加入所有食材充分搅拌'],ne:['10 मिनेट चिसो पानीमा पग्लाएर निकाल्नुहोस्','रबर ब्यान्ड जस्ता विदेशी वस्तुहरू एक-एक जाँच गरी हटाउनुहोस्','सबै सामग्री हालेर राम्ररी मिसाउनुहोस्']}},
+   steps:{ko:['모든 양념을 섞는다','꽃게는 찬물에 충분히 해동 후 낚싯줄·고무줄 등 이물질을 눈으로 하나씩 확인해서 제거하면서, 모든 재료를 섞은 양념에 넣는다','모두 다 담기면 목장갑 2개를 각각 손에 끼고, 일회용 비닐장갑 1개를 껴서 양념이 잘 섞이도록 섞는다'],en:['Mix all the seasoning ingredients together','Thaw the crab fully in cold water, then check each piece by eye and remove any fishing line, rubber bands or other foreign matter as you add it to the mixed seasoning','Once all the crab is in, put on 2 cotton work gloves (one on each hand) with a disposable plastic glove over them, and mix so the seasoning coats evenly'],zh:['将所有调料混合均匀','螃蟹用冷水充分解冻后，逐一用眼睛检查并去除鱼线、橡皮筋等异物，边去除边放入混合好的调料中','全部放入后，双手各戴1只棉手套，外面再戴1只一次性塑料手套，搅拌使调料均匀'],ne:['सबै मसला मिसाउनुहोस्','केकडालाई चिसो पानीमा राम्ररी पग्लाउनुहोस्, त्यसपछि एक-एक आँखाले जाँच गरी माछा मार्ने धागो, रबर ब्यान्ड जस्ता विदेशी वस्तु हटाउँदै मिसाएको मसलामा हाल्नुहोस्','सबै हालिसकेपछि दुवै हातमा कपडाको पन्जा लगाएर माथि एउटा प्लास्टिक पन्जा लगाउनुहोस् र मसला राम्ररी मिसाउनुहोस्']}},
+  {id:'r14',icon:'🧅',
+   name:{ko:'양념 게장 (2박스)',en:'Seasoned Crab Marinade (2 boxes)',zh:'调味螃蟹酱（2箱）',ne:'सिजन गरिएको केकडा म्यारिनेड (2 बक्स)'},
+   eye:{ko:'낙지·꼴뚜기 이물질 확인',en:'Check octopus / squid for foreign matter',zh:'检查章鱼·鱿鱼异物',ne:'अक्टोपस/स्क्विडमा विदेशी वस्तु जाँच'},
+   note:{ko:'',en:'',zh:'',ne:''},
+   ing:[
+     ing({ko:'미림',en:'Mirin',zh:'味醂',ne:'मिरिन'},'400그램'),
+     ing({ko:'물엿',en:'Corn syrup',zh:'玉米糖浆',ne:'कर्न सिरप'},'600그램','',{ko:'물엿이 많이 부어지지 않도록 주의!',en:'Careful not to pour in too much corn syrup!',zh:'注意不要倒入过多玉米糖浆！',ne:'कर्न सिरप धेरै नहाल्न सावधान!'}),
+     ing({ko:'고추가루',en:'Red pepper powder',zh:'辣椒粉',ne:'रातो मिर्च पाउडर'},'900그램'),
+     ing({ko:'까나리액젓',en:'Sandlance fish sauce',zh:'玉筋鱼鱼露',ne:'फिश सस'},'400그램'),
+     ing({ko:'다진마늘',en:'Minced garlic',zh:'蒜末',ne:'कुटेको लसुन'},'600그램'),
+     ing({ko:'다진생강',en:'Minced ginger',zh:'姜末',ne:'कुटेको अदुवा'},'300그램'),
+     ing({ko:'미원',en:'MSG',zh:'味精',ne:'एमएसजी'},'400그램'),
+     ing({ko:'다시다',en:'Dasida',zh:'多喜大',ne:'दासिदा'},'300그램'),
+     ing({ko:'양파분말',en:'Onion powder',zh:'洋葱粉',ne:'प्याज पाउडर'},'200그램'),
+     ing({ko:'설탕',en:'Sugar',zh:'糖',ne:'चिनी'},'2,000그램'),
+     ing({ko:'참기름',en:'Sesame oil',zh:'香油',ne:'तिलको तेल'},'300그램'),
+     ing({ko:'참깨',en:'Sesame seeds',zh:'芝麻',ne:'तिल'},'200그램'),
+     ing({ko:'후추가루',en:'Black pepper powder',zh:'胡椒粉',ne:'कालो मिर्च पाउडर'},'20그램'),
+     ing({ko:'고추기름',en:'Chili oil',zh:'辣椒油',ne:'खुर्सानीको तेल'},'300그램'),
+   ],
+   steps:{ko:['모든 양념을 섞는다','꽃게는 찬물에 충분히 해동 후 낚싯줄·고무줄 등 이물질을 눈으로 하나씩 확인해서 제거하면서, 모든 재료를 섞은 양념에 넣는다','모두 다 담기면 목장갑 2개를 각각 손에 끼고, 일회용 비닐장갑 1개를 껴서 양념이 잘 섞이도록 섞는다'],en:['Mix all the seasoning ingredients together','Thaw the crab fully in cold water, then check each piece by eye and remove any fishing line, rubber bands or other foreign matter as you add it to the mixed seasoning','Once all the crab is in, put on 2 cotton work gloves (one on each hand) with a disposable plastic glove over them, and mix so the seasoning coats evenly'],zh:['将所有调料混合均匀','螃蟹用冷水充分解冻后，逐一用眼睛检查并去除鱼线、橡皮筋等异物，边去除边放入混合好的调料中','全部放入后，双手各戴1只棉手套，外面再戴1只一次性塑料手套，搅拌使调料均匀'],ne:['सबै मसला मिसाउनुहोस्','केकडालाई चिसो पानीमा राम्ररी पग्लाउनुहोस्, त्यसपछि एक-एक आँखाले जाँच गरी माछा मार्ने धागो, रबर ब्यान्ड जस्ता विदेशी वस्तु हटाउँदै मिसाएको मसलामा हाल्नुहोस्','सबै हालिसकेपछि दुवै हातमा कपडाको पन्जा लगाएर माथि एउटा प्लास्टिक पन्जा लगाउनुहोस् र मसला राम्ररी मिसाउनुहोस्']}},
   {id:'r8',icon:'🍜',
    name:{ko:'냉모밀 육수',en:'Cold Soba Broth',zh:'冷荞麦面汤底',ne:'चिसो सोबा सुप'},
    eye:{ko:'완전히 식혀서 냉장 보관',en:'Cool completely then refrigerate',zh:'完全冷却后冷藏',ne:'पूर्ण चिसो पारेर फ्रिजमा राख्नुहोस्'},
@@ -1303,8 +1380,7 @@ const RECIPES=[
      ing({ko:'간장',en:'Soy sauce',zh:'酱油',ne:'सोया सस'},'1,200그램'),
      ing({ko:'미원',en:'MSG',zh:'味精',ne:'एमएसजी'},'150그램'),
      ing({ko:'혼다시',en:'Hondashi',zh:'本味霖',ne:'होन्दाशी'},'150그램'),
-     ing({ko:'설탕',en:'Sugar',zh:'糖',ne:'चिनी'},'900그램'),
-     ing({ko:'실망',en:'Silmang (light soy sauce)',zh:'清淡酱油',ne:'सिलम्याङ'},'900그램'),
+     ing({ko:'설탕',en:'Sugar',zh:'糖',ne:'चिनी'},'800그램'),
    ],
    steps:{ko:['모든 재료를 넣고 잘 섞은 후 끓인다','찬물에 완전히 식힌 후 걸러서 냉장 보관'],en:['Add all ingredients, mix well and bring to a boil','Cool completely in cold water, strain, then refrigerate'],zh:['加入所有食材搅拌均匀后煮沸','完全冷却后过滤冷藏保存'],ne:['सबै सामग्री हालेर मिसाउनुहोस् र उमाल्नुहोस्','चिसो पानीमा ठण्डा पारेर छानेर फ्रिजमा राख्नुहोस्']}},
   {id:'r9',icon:'🦈',
@@ -1340,9 +1416,9 @@ const RECIPES=[
      ing({ko:'콩가루',en:'Soybean powder',zh:'豆粉',ne:'सोयाबिन पाउडर'},'1,000그램'),
      ing({ko:'다진마늘',en:'Minced garlic',zh:'蒜末',ne:'कुटेको लसुन'},'1,000그램'),
      ing({ko:'땅콩가루',en:'Peanut powder',zh:'花生粉',ne:'बदामको पाउडर'},'1,000그램'),
-     ing({ko:'설탕',en:'Sugar',zh:'糖',ne:'चिनी'},'1,500그램'),
+     ing({ko:'설탕',en:'Sugar',zh:'糖',ne:'चिनी'},'1,300그램'),
      ing({ko:'참기름',en:'Sesame oil',zh:'香油',ne:'तिलको तेल'},'500그램'),
-     ing({ko:'다시다',en:'Dasida',zh:'多喜大',ne:'दासिदा'},'500그램'),
+     ing({ko:'다시다',en:'Dasida',zh:'多喜大',ne:'दासिदा'},'300그램'),
      ing({ko:'미원',en:'MSG',zh:'味精',ne:'एमएसजी'},'500그램'),
      ing({ko:'물엿',en:'Corn syrup',zh:'玉米糖浆',ne:'कर्न सिरप'},'1,000그램'),
      ing({ko:'참깨',en:'Sesame seeds',zh:'芝麻',ne:'तिल'},'300그램'),
@@ -1354,10 +1430,10 @@ const RECIPES=[
    eye:{ko:'재료 혼합',en:'Mix all ingredients',zh:'混合所有食材',ne:'सबै सामग्री मिसाउनुहोस्'},
    note:{ko:'',en:'',zh:'',ne:''},
    ing:[
-     ing({ko:'오징어 젓갈',en:'Salted squid',zh:'腌鱿鱼',ne:'नुनिएको स्क्विड'},'6킬로그램'),
+     ing({ko:'오징어 젓갈',en:'Salted squid',zh:'腌鱿鱼',ne:'नुनिएको स्क्विड'},'9킬로그램'),
      ing({ko:'땅콩',en:'Peanuts',zh:'花生',ne:'बदाम'},'1킬로그램'),
      ing({ko:'해바라기씨',en:'Sunflower seeds',zh:'葵花籽',ne:'सूर्यमुखी बिउ'},'1킬로그램'),
-     ing({ko:'물엿',en:'Corn syrup',zh:'玉米糖浆',ne:'कर्न सिरप'},'1킬로그램'),
+     ing({ko:'물엿',en:'Corn syrup',zh:'玉米糖浆',ne:'कर्न सिरप'},'1.5킬로그램'),
    ],
    steps:{ko:['모두 잘 섞는다'],en:['Mix all together well'],zh:['将所有食材混合均匀'],ne:['सबैलाई राम्ररी मिसाउनुहोस्']}},
 ];
@@ -1695,8 +1771,9 @@ function toggleCk(e,key){
 }
 
 /* ════ PANEL ════ */
-function openPanel(title,eye,bodyHtml,cntFn){
+function openPanel(title,eye,bodyHtml,cntFn,isRecipe){
   curPanel={cntFn};
+  document.getElementById('panel').classList.toggle('rcp',!!isRecipe);
   document.getElementById('pbTitle').textContent=title;
   document.getElementById('pbEye').textContent=eye||'';
   document.getElementById('pbody').innerHTML=bodyHtml;
@@ -1749,11 +1826,14 @@ function ckIngHtml(key,item){
   const nameEsc=name.replace(/'/g,"\\'");
   const amtEsc=amt.replace(/'/g,"\\'");
   const grpEsc=(grpRaw||'').replace(/'/g,"\\'");
-  const grpBadge=grpRaw?`<span style="font-size:9px;color:var(--gold4);border:1px solid rgba(200,150,10,.2);border-radius:10px;padding:1px 6px;margin-left:6px">${grpRaw}</span>`:'';
-  return`<div class="ck${on?' done':''}" data-ck="${key}" onclick="openIngModal('${key}','${nameEsc}','${amtEsc}','${grpEsc}')">
+  const grpBadge=grpRaw?`<span class="rcp-grp">${grpRaw}</span>`:'';
+  const warnTxt=item.w?(typeof item.w==='object'?(item.w[curLang]||item.w.ko):item.w):'';
+  const warnEsc=warnTxt.replace(/'/g,"\\'");
+  return`<div class="ck${on?' done':''}${warnTxt?' ing-warn':''}" data-ck="${key}" onclick="openIngModal('${key}','${nameEsc}','${amtEsc}','${grpEsc}','${warnEsc}')">
     <div class="ck-box">${on?'✓':''}</div>
     <div class="ck-body">
       <div class="ck-m">${name}${grpBadge}</div>
+      ${warnTxt?`<div class="ing-warn-txt">⚠️ ${warnTxt}</div>`:''}
     </div>
   </div>`;
 }
@@ -1761,7 +1841,7 @@ function ckIngHtml(key,item){
 /* ════ PANEL BODY BUILDERS ════ */
 function buildRecipeBody(r){
   const note=r.note[curLang]||r.note.ko;
-  const noteHtml=note?`<div style="background:rgba(200,150,10,.06);border:1px solid rgba(200,150,10,.15);border-radius:8px;padding:9px 12px;font-size:12px;color:var(--gold);margin-bottom:12px">💡 ${note}</div>`:'';
+  const noteHtml=note?`<div class="rcp-note">${/^(주의|Caution|注意|सावधान)/.test(note)?'⚠️':'💡'} ${note}</div>`:'';
   const doneIng=r.ing.filter((_,i)=>S[RK(r.id,i)]).length;
   const steps=r.steps[curLang]||r.steps.ko;
   return`${noteHtml}
@@ -1773,21 +1853,17 @@ function buildRecipeBody(r){
         const grp=grpRaw||null;
         let divider='';
         if(grp && grp!==lastGrp){
-          divider=`<div style="display:flex;align-items:center;gap:8px;margin:10px 0 4px">
-            <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(200,150,10,.5),transparent)"></div>
-            <span style="font-size:10px;color:var(--gold2);letter-spacing:2px;font-family:'Cormorant Garamond',serif;font-weight:600">${grp}</span>
-            <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(200,150,10,.5))"></div>
-          </div>`;
+          divider=`<div class="rcp-div"><i></i><span>${grp}</span><i></i></div>`;
           lastGrp=grp;
         }
         return divider+ckIngHtml(RK(r.id,i),item);
       }).join('');
     })()}</div>
     <span class="sg-lbl">📋 ${T('recipe-step')}</span>
-    <div style="font-size:11px;color:var(--gold4);margin:-6px 0 10px;padding:0 2px">${T('step-ref-note')}</div>
+    <div class="rcp-ref">${T('step-ref-note')}</div>
     ${(()=>{let n=0;return steps.map(s=>{
       if(s.startsWith('━━━')){
-        return`<div style="display:flex;align-items:center;gap:8px;margin:10px 0 6px"><div style="flex:1;height:1px;background:rgba(200,150,10,.25)"></div><span style="font-size:10px;color:var(--gold2);letter-spacing:2px;white-space:nowrap">${s.replace(/━/g,'').trim()}</span><div style="flex:1;height:1px;background:rgba(200,150,10,.25)"></div></div>`;
+        return`<div class="rcp-div"><i></i><span>${s.replace(/━/g,'').trim()}</span><i></i></div>`;
       }
       n++;
       return`<div class="step-item"><div class="step-num">${n}</div><div class="step-txt">${s}</div></div>`;
@@ -1807,7 +1883,7 @@ function buildAnalBody(sec){return`<div class="ck-list">${sec.items.map((item,i)
 
 /* ════ CAT CARD ════ */
 function catCardClick(scope,id1,id2){
-  if(scope==='recipe'){const r=RECIPES.find(x=>x.id===id1);if(!r)return;openPanel(r.name[curLang]||r.name.ko,r.eye[curLang]||r.eye.ko,buildRecipeBody(r),()=>cntR(r));}
+  if(scope==='recipe'){const r=RECIPES.find(x=>x.id===id1);if(!r)return;openPanel(r.name[curLang]||r.name.ko,r.eye[curLang]||r.eye.ko,buildRecipeBody(r),()=>cntR(r),true);}
   else if(scope==='pos'){const cat=PCATS.find(c=>c.id===id2);if(!cat)return;const nm=cat.name[curLang]||cat.name.ko||cat.name;const ey=cat.eye[curLang]||cat.eye.ko||cat.eye;openPanel(nm,ey,buildPosCatBody(id1,cat),()=>cntCat(id1,cat));}
   else if(scope==='tech'){const cat=TCATS.find(c=>c.id===id1);if(!cat)return;const nm=cat.name[curLang]||cat.name.ko||cat.name;const ey=cat.eye[curLang]||cat.eye.ko||cat.eye;openPanel(nm,ey,buildTechBody(cat),()=>cntTC(cat));}
   else if(scope==='anal'){const sec=ASECS.find(s=>s.id===id1);if(!sec)return;const nm=sec.name[curLang]||sec.name.ko||sec.name;const ey=sec.eye[curLang]||sec.eye.ko||sec.eye;openPanel(nm,ey,buildAnalBody(sec),()=>cntAS(sec));}
@@ -2350,8 +2426,10 @@ function toggleStepRef(btn){
 /* ════ 재료 상세 모달 — 레시피 수량 표시 ════ */
 let _ingCtx={key:'',title:'',amt:'',note:''};
 
-function openIngModal(key,title,amt,note){
+function openIngModal(key,title,amt,note,warn){
   _ingCtx={key,title,amt,note};
+  const wEl=document.getElementById('ing-modal-warn');
+  if(wEl){wEl.textContent=warn?('⚠️ '+warn):'';wEl.style.display=warn?'block':'none';}
   const on=!!S[key];
   document.getElementById('ing-modal-title').textContent=title;
   document.getElementById('ing-modal-sub').textContent=note||'';
